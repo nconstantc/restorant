@@ -1,0 +1,61 @@
+<!DOCTYPE .html>
+<html lang="en">
+  <head>
+    <style>
+          body{
+            color: blueviolet;
+            background-color: aqua;
+          }
+
+</style>
+          <script type="text/javascript">
+              function show_alert(){
+      alert("im an alert box!")
+              }
+              function show_prompt(){
+                  var name=prompt("please enter your name","Harry Potery");
+                  if (name!=null&& name!=""){
+                      document.write("hello"+name+"!how are you to day?"+"Have a nice day and enjoy your meal!");
+                  }
+              }
+
+            function validate_request(field,alerttxt)
+            {with(field)
+              {
+                if(value==null||value=="")
+                {
+                  alert(alerttxt);return false
+                }
+                else{
+                  return true;
+                }
+              }
+            }
+            function validate_request(thisform){
+              with(thisform){
+                if(validate_request("email must be filled out!")==false)
+                {
+                  email.focus();return false
+                }
+              }
+            }
+
+              </script>
+
+       <title<meta charset="utf-8">
+      CONTACT FORM</title>
+  
+  </head>
+  <body>
+    <form
+      action="https://formsubmit.co/nconstantine521@gmail.com"
+      method="POST"
+    >
+      <p>NAME:<input type="text"name=""  placeholder="put your full name here"size=="20"required></p>
+      <p>EMAIL:<input type="email" name=""  placeholder="put your email here"size="20" required /></p>
+      <p>MESSAGE:<input type="text area" name="" placeholder="type your message   here" width="25" height="35" /></p>
+      <input type="button" onmousemove="show_alert()" value="ok " />
+      <input type="button" onclick="show_prompt()" value="show prompt box" />
+    </form>
+  </body>
+</html>
